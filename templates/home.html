@@ -37,6 +37,7 @@
       </style>
   </head>
   <body>
+    {% include 'nav.html' %}
     <div id="container">
     <h1 class="heading1">Manal Careers</h1>
     <img id="banner"src="https://manali-website-1.manalimahajan.repl.co/static/banner.jpg">
@@ -56,12 +57,13 @@
            </div>
              </div>
            <div class="col-3">
-           <button onclick="https://www.linkedin.com/feed/"style="padding-bottom:8px;" class="btn btn-primary" type="submit">Apply Now</button>
+           <a href="mailto:manalimhjn99@gmail.com?subject=Application for {{job['Role']}}" style="padding-bottom:8px;" class="btn btn-primary" type="submit">Apply Now</a>
              </div>
          </div>
       {% endfor %}
     </p>
-      <button onclick="https://getbootstrap.com/docs/5.3/components/buttons/#button-plugin"style="text-align:center;"  class="btn btn-primary"  type="submit">Contact Us</button>
+      <button style="text-align:center;"  class="btn btn-primary"  type="submit">Contact Us</button>
     </div>
+    {% include 'footer.html' %}
   </body>
 </html>
